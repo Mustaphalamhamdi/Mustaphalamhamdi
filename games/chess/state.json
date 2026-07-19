@@ -1,7 +1,17 @@
 {
-  "fen": "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1",
-  "lastMove": null,
-  "history": [],
-  "players": {},
+  "fen": "rnbqkbnr/pppppppp/8/8/8/P7/1PPPPPPP/RNBQKBNR b KQkq - 0 1",
+  "lastMove": {
+    "from": "a2",
+    "to": "a3"
+  },
+  "history": [
+    {
+      "san": "a3",
+      "player": "Mustaphalamhamdi"
+    }
+  ],
+  "players": {
+    "Mustaphalamhamdi": 1
+  },
   "gamesPlayed": 0
 }
