@@ -1,82 +1,137 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=180&section=header&text=Mustapha%20Lamhamdi%20Alaoui&fontSize=42&fontColor=fff&animation=fadeIn&fontAlignY=32&desc=Software%20Engineer%20%7C%20Full-Stack%20Developer&descAlignY=55&descSize=18" width="100%"/>
+<!-- CUSTOM ANIMATED HERO (hosted in this repo) -->
+<img src="./assets/hero-banner.svg" width="100%" alt="Mustapha Lamhamdi — Software Engineer"/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=00D9FF&center=true&vCenter=true&width=600&lines=Full-Stack+Web+Developer+%F0%9F%8C%90;Java+%26+JavaFX+Desktop+Apps+%E2%98%95;Building+Ideas+Into+Products+%F0%9F%9A%80;Always+Learning+Something+New+%F0%9F%93%9A" alt="Typing SVG" />
+<br/><br/>
 
-<br/>
+<!-- LIVE TERMINAL -->
+<img src="./assets/terminal.svg" width="90%" alt="Interactive terminal"/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mustapha-lamhamdi-alaoui-1b905a1b7/)
-[![Email](https://img.shields.io/badge/Email-Contact_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mustapha11lamhamdi11@gmail.com)
-[![X](https://img.shields.io/badge/X-Follow-000000?style=for-the-badge&logo=x&logoColor=white)](https://twitter.com/mustaphalamham8)
-[![Profile Views](https://komarev.com/ghpvc/?username=Mustaphalamhamdi&style=for-the-badge&color=00d9ff)](https://github.com/Mustaphalamhamdi)
+<br/><br/>
+
+<a href="https://www.linkedin.com/in/mustapha-lamhamdi-alaoui-1b905a1b7/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white&labelColor=0A66C2"/></a>
+&nbsp;
+<a href="mailto:mustapha11lamhamdi11@gmail.com"><img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=EA4335"/></a>
+&nbsp;
+<a href="https://twitter.com/mustaphalamham8"><img src="https://img.shields.io/badge/X-000000?style=for-the-badge&logo=x&logoColor=white"/></a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=Mustaphalamhamdi&style=for-the-badge&color=00f5ff&label=VISITORS"/>
 
 </div>
 
-## 🧑‍💻 About Me
+<br/>
 
-```javascript
-const mustapha = {
-    location: "Rabat, Morocco 🇲🇦",
-    role: "Software Engineer",
-    code: ["JavaScript", "TypeScript", "Java", "PHP", "SQL"],
-    currentFocus: "Building full-stack web & desktop applications",
-    funFact: "First, solve the problem. Then, write the code ⚡"
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="30"> About Me
+
+```typescript
+type Engineer = {
+  name: string;
+  location: string;
+  mission: string;
+  stack: string[];
+};
+
+const mustapha: Engineer = {
+  name: "Mustapha Lamhamdi Alaoui",
+  location: "Rabat, Morocco 🇲🇦",
+  mission: "Turning ideas into shipped products",
+  stack: ["Java/JavaFX", "TypeScript", "JavaScript", "PHP", "MySQL"],
 };
 ```
 
-## 🛠️ Tech Arsenal
+## ⚡ Tech Stack
 
 <div align="center">
 
-### Languages & Frameworks
-<img src="https://skillicons.dev/icons?i=js,ts,java,php,html,css,nodejs,mysql&perline=8" />
+<img src="https://skillicons.dev/icons?i=java,js,ts,php,html,css,nodejs,mysql,git,github,vscode,idea&perline=6" />
 
-### Tools & Environment
-<img src="https://skillicons.dev/icons?i=git,github,vscode,idea,figma,linux&perline=8" />
+</div>
+
+## 🐍 Watch My Contributions Get Eaten
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Mustaphalamhamdi/Mustaphalamhamdi/output/github-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mustaphalamhamdi/Mustaphalamhamdi/output/github-snake.svg"/>
+  <img src="https://raw.githubusercontent.com/Mustaphalamhamdi/Mustaphalamhamdi/output/github-snake-dark.svg" alt="Snake eating my contributions"/>
+</picture>
 
 </div>
 
 ## 🚀 Featured Projects
 
+<table align="center">
+<tr>
+<td width="50%" valign="top">
+
+### 🧠 RevisIA
+**AI-assisted revision desktop app**
+
+Desktop application built with JavaFX that helps students revise smarter.
+
+![Java](https://img.shields.io/badge/JavaFX-ED8B00?style=flat-square&logo=openjdk&logoColor=white)
+
+[View Repo →](https://github.com/Mustaphalamhamdi/RevisIA)
+
+</td>
+<td width="50%" valign="top">
+
+### 🛒 Used Products Marketplace
+**Full-stack second-hand marketplace**
+
+Buy & sell platform with listings, auth, and a PHP/MySQL backend.
+
+![PHP](https://img.shields.io/badge/PHP-777BB4?style=flat-square&logo=php&logoColor=white)
+
+[View Repo →](https://github.com/Mustaphalamhamdi/usedProductsMartketPlace)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### 📚 IsmagiLearningApp
+**E-learning platform**
+
+Web platform for online learning, built with JavaScript.
+
+![JS](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+
+[View Repo →](https://github.com/Mustaphalamhamdi/IsmagiLearningApp)
+
+</td>
+<td width="50%" valign="top">
+
+### 🔐 Password Manager
+**Secure credentials vault**
+
+Type-safe password manager built with TypeScript.
+
+![TS](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+
+[View Repo →](https://github.com/Mustaphalamhamdi/Password-Manager)
+
+</td>
+</tr>
+</table>
+
+## 📊 Stats
+
 <div align="center">
 
-| 🎯 Project | 📝 Description | 🔧 Tech |
-|:---|:---|:---:|
-| **[RevisIA](https://github.com/Mustaphalamhamdi/RevisIA)** | AI-assisted revision desktop application | ![Java](https://img.shields.io/badge/-JavaFX-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| **[IsmagiLearningApp](https://github.com/Mustaphalamhamdi/IsmagiLearningApp)** | E-learning platform for students | ![JS](https://img.shields.io/badge/-JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) |
-| **[Used Products Marketplace](https://github.com/Mustaphalamhamdi/usedProductsMartketPlace)** | Full-stack second-hand marketplace | ![PHP](https://img.shields.io/badge/-PHP-777BB4?style=flat-square&logo=php&logoColor=white) |
-| **[Password Manager](https://github.com/Mustaphalamhamdi/Password-Manager)** | Secure credentials vault | ![TS](https://img.shields.io/badge/-TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) |
+<img height="175" src="https://github-readme-stats.vercel.app/api?username=Mustaphalamhamdi&show_icons=true&hide_border=true&bg_color=0d1224&title_color=00f5ff&icon_color=a855f7&text_color=94a3b8&ring_color=00f5ff&count_private=true" />
+<img height="175" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mustaphalamhamdi&layout=compact&hide_border=true&bg_color=0d1224&title_color=00f5ff&text_color=94a3b8" />
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mustaphalamhamdi&bg_color=0d1224&color=00f5ff&line=a855f7&point=ff2d95&hide_border=true&area=true&area_color=1e1b4b" width="95%"/>
 
 </div>
 
-## 📊 GitHub Analytics
+<br/>
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Mustaphalamhamdi&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff&icon_color=00d9ff&count_private=true" alt="GitHub Stats" />
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mustaphalamhamdi&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d9ff" alt="Top Languages" />
-
-<img src="https://streak-stats.demolab.com?user=Mustaphalamhamdi&theme=tokyonight&hide_border=true&background=0d1117&ring=00d9ff&fire=00d9ff&currStreakLabel=00d9ff" alt="GitHub Streak" />
-
-<img src="https://github-profile-trophy.vercel.app/?username=Mustaphalamhamdi&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="Trophies" />
-
-</div>
-
-## 📈 Contribution Graph
-
-<div align="center">
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mustaphalamhamdi&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00d9ff&line=00d9ff&point=ffffff" width="95%" alt="Activity Graph" />
-
-</div>
-
----
-
-<div align="center">
-
-### 💬 *"First, solve the problem. Then, write the code."*
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=120&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f5ff,50:a855f7,100:ff2d95&height=110&section=footer" width="100%"/>
 
 </div>
