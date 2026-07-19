@@ -1,124 +1,128 @@
-<svg width="1000" height="280" viewBox="0 0 1000 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="300" viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="bgGrad" x1="0" y1="0" x2="1000" y2="280" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#05010f"/>
-      <stop offset="0.5" stop-color="#0b0620"/>
-      <stop offset="1" stop-color="#020617"/>
-    </linearGradient>
-    <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00f5ff">
-        <animate attributeName="stop-color" values="#00f5ff;#a855f7;#ff2d95;#00f5ff" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="50%" stop-color="#a855f7">
-        <animate attributeName="stop-color" values="#a855f7;#ff2d95;#00f5ff;#a855f7" dur="6s" repeatCount="indefinite"/>
-      </stop>
-      <stop offset="100%" stop-color="#ff2d95">
-        <animate attributeName="stop-color" values="#ff2d95;#00f5ff;#a855f7;#ff2d95" dur="6s" repeatCount="indefinite"/>
-      </stop>
-    </linearGradient>
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="3" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e1b4b" stroke-width="1" opacity="0.5"/>
-    </pattern>
     <style>
-      .particle { animation: float 8s ease-in-out infinite; }
-      .p2 { animation-delay: -2s; }
-      .p3 { animation-delay: -4s; }
-      .p4 { animation-delay: -6s; }
-      .p5 { animation-delay: -1s; }
-      .p6 { animation-delay: -5s; }
-      @keyframes float {
-        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.9; }
-        25% { transform: translateY(-18px) translateX(8px); opacity: 0.4; }
-        50% { transform: translateY(-6px) translateX(-10px); opacity: 1; }
-        75% { transform: translateY(-24px) translateX(4px); opacity: 0.5; }
+      .px { animation: flick 6s ease-in-out infinite; }
+      .d1 { animation-delay: -0.7s; } .d2 { animation-delay: -1.4s; }
+      .d3 { animation-delay: -2.1s; } .d4 { animation-delay: -2.8s; }
+      .d5 { animation-delay: -3.5s; } .d6 { animation-delay: -4.2s; }
+      .d7 { animation-delay: -4.9s; } .d8 { animation-delay: -5.6s; }
+      @keyframes flick {
+        0%, 100% { opacity: 1; }
+        12% { opacity: 0.15; }
+        24% { opacity: 1; }
+        61% { opacity: 0.45; }
+        78% { opacity: 1; }
       }
-      .scanline { animation: scan 4s linear infinite; }
-      @keyframes scan {
-        0% { transform: translateY(-20px); opacity: 0; }
-        10% { opacity: 0.6; }
-        90% { opacity: 0.6; }
-        100% { transform: translateY(300px); opacity: 0; }
+      .runner {
+        animation: journey 14s linear infinite;
       }
-      .pulse-ring { animation: ring 3s ease-out infinite; transform-origin: 500px 140px; }
-      @keyframes ring {
-        0% { transform: scale(0.8); opacity: 0.8; }
-        100% { transform: scale(1.6); opacity: 0; }
+      @keyframes journey {
+        0%   { transform: translate(0px, 0px); opacity: 0; }
+        4%   { opacity: 1; }
+        45%  { transform: translate(-420px, 26px); opacity: 1; }
+        50%  { transform: translate(-430px, 26px); opacity: 0; }
+        100% { transform: translate(-430px, 26px); opacity: 0; }
       }
-      .subtitle { animation: fadeSlide 1.2s ease-out 0.5s both; }
-      @keyframes fadeSlide {
-        from { opacity: 0; transform: translateY(12px); }
-        to { opacity: 1; transform: translateY(0); }
+      .runner2 {
+        animation: journey2 14s linear infinite;
+        animation-delay: -7s;
       }
-      .bracket-l { animation: bracketL 1s ease-out both; }
-      .bracket-r { animation: bracketR 1s ease-out both; }
-      @keyframes bracketL { from { opacity: 0; transform: translateX(-30px); } to { opacity: 1; transform: translateX(0); } }
-      @keyframes bracketR { from { opacity: 0; transform: translateX(30px); } to { opacity: 1; transform: translateX(0); } }
-      .dash-line { stroke-dasharray: 300; stroke-dashoffset: 300; animation: draw 2s ease-out 0.8s forwards; }
-      @keyframes draw { to { stroke-dashoffset: 0; } }
-      .status-dot { animation: blinkDot 2s ease-in-out infinite; }
-      @keyframes blinkDot { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+      @keyframes journey2 {
+        0%   { transform: translate(0px, 0px); opacity: 0; }
+        4%   { opacity: 1; }
+        45%  { transform: translate(-380px, -18px); opacity: 1; }
+        50%  { transform: translate(-390px, -18px); opacity: 0; }
+        100% { transform: translate(-390px, -18px); opacity: 0; }
+      }
+      .rule { stroke-dasharray: 860; stroke-dashoffset: 860; animation: drawrule 1.6s ease-out 0.4s forwards; }
+      @keyframes drawrule { to { stroke-dashoffset: 0; } }
+      .dot { animation: breathe 2.6s ease-in-out infinite; }
+      @keyframes breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+      .intro { animation: rise 1s ease-out both; }
+      .intro2 { animation: rise 1s ease-out 0.25s both; }
+      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      .cap { animation: rise 1s ease-out 0.9s both; }
     </style>
   </defs>
 
-  <!-- Background -->
-  <rect width="1000" height="280" fill="url(#bgGrad)"/>
-  <rect width="1000" height="280" fill="url(#grid)"/>
+  <rect width="1000" height="300" fill="#101012"/>
 
-  <!-- Ambient glow orbs -->
-  <circle cx="150" cy="60" r="90" fill="#7c3aed" opacity="0.12">
-    <animate attributeName="r" values="90;120;90" dur="7s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="880" cy="220" r="100" fill="#06b6d4" opacity="0.10">
-    <animate attributeName="r" values="100;130;100" dur="9s" repeatCount="indefinite"/>
-  </circle>
-  <circle cx="500" cy="140" r="140" fill="#ec4899" opacity="0.06">
-    <animate attributeName="r" values="140;170;140" dur="8s" repeatCount="indefinite"/>
-  </circle>
+  <!-- name block -->
+  <text class="intro" x="72" y="140" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="54" font-weight="700" letter-spacing="-1.5" fill="#f4f4f2">Mustapha Lamhamdi</text>
+  <text class="intro2" x="74" y="178" font-family="'Segoe UI', Arial, sans-serif" font-size="17" letter-spacing="5" fill="#6b6b70">SOFTWARE ENGINEER</text>
 
-  <!-- Scanline -->
-  <rect class="scanline" x="0" y="0" width="1000" height="3" fill="#00f5ff" opacity="0.5"/>
+  <!-- the jewel: living pixel mosaic -->
+  <g transform="translate(770,72)">
+    <rect class="px"    x="0"  y="0"  width="11" height="11" fill="#f97316"/>
+    <rect class="px d3" x="13" y="0"  width="11" height="11" fill="#27272a"/>
+    <rect class="px d5" x="26" y="0"  width="11" height="11" fill="#eab308"/>
+    <rect class="px d1" x="39" y="0"  width="11" height="11" fill="#27272a"/>
+    <rect class="px d7" x="52" y="0"  width="11" height="11" fill="#f97316"/>
+    <rect class="px d2" x="65" y="0"  width="11" height="11" fill="#3f3f46"/>
+    <rect class="px d4" x="78" y="0"  width="11" height="11" fill="#22d3ee"/>
+    <rect class="px d6" x="91" y="0"  width="11" height="11" fill="#27272a"/>
+    <rect class="px d8" x="104" y="0" width="11" height="11" fill="#f43f5e"/>
+    <rect class="px d2" x="117" y="0" width="11" height="11" fill="#3f3f46"/>
 
-  <!-- Floating particles -->
-  <circle class="particle" cx="120" cy="200" r="3" fill="#00f5ff" filter="url(#softGlow)"/>
-  <circle class="particle p2" cx="260" cy="80" r="2" fill="#a855f7" filter="url(#softGlow)"/>
-  <circle class="particle p3" cx="760" cy="70" r="3" fill="#ff2d95" filter="url(#softGlow)"/>
-  <circle class="particle p4" cx="880" cy="120" r="2" fill="#00f5ff" filter="url(#softGlow)"/>
-  <circle class="particle p5" cx="640" cy="230" r="2.5" fill="#a855f7" filter="url(#softGlow)"/>
-  <circle class="particle p6" cx="360" cy="240" r="2" fill="#22d3ee" filter="url(#softGlow)"/>
+    <rect class="px d4" x="0"  y="13" width="11" height="11" fill="#3f3f46"/>
+    <rect class="px d6" x="13" y="13" width="11" height="11" fill="#22d3ee"/>
+    <rect class="px d8" x="26" y="13" width="11" height="11" fill="#27272a"/>
+    <rect class="px d1" x="39" y="13" width="11" height="11" fill="#f43f5e"/>
+    <rect class="px d3" x="52" y="13" width="11" height="11" fill="#27272a"/>
+    <rect class="px d5" x="65" y="13" width="11" height="11" fill="#eab308"/>
+    <rect class="px d7" x="78" y="13" width="11" height="11" fill="#27272a"/>
+    <rect class="px d2" x="91" y="13" width="11" height="11" fill="#a3e635"/>
+    <rect class="px d4" x="104" y="13" width="11" height="11" fill="#27272a"/>
+    <rect class="px d6" x="117" y="13" width="11" height="11" fill="#f97316"/>
 
-  <!-- Pulse ring behind name -->
-  <circle class="pulse-ring" cx="500" cy="140" r="90" fill="none" stroke="#a855f7" stroke-width="1" opacity="0.5"/>
+    <rect class="px d8" x="0"  y="26" width="11" height="11" fill="#eab308"/>
+    <rect class="px d1" x="13" y="26" width="11" height="11" fill="#27272a"/>
+    <rect class="px d3" x="26" y="26" width="11" height="11" fill="#a3e635"/>
+    <rect class="px d5" x="39" y="26" width="11" height="11" fill="#3f3f46"/>
+    <rect class="px d7" x="52" y="26" width="11" height="11" fill="#22d3ee"/>
+    <rect class="px d2" x="65" y="26" width="11" height="11" fill="#27272a"/>
+    <rect class="px d4" x="78" y="26" width="11" height="11" fill="#f43f5e"/>
+    <rect class="px d6" x="91" y="26" width="11" height="11" fill="#27272a"/>
+    <rect class="px d8" x="104" y="26" width="11" height="11" fill="#eab308"/>
+    <rect class="px d1" x="117" y="26" width="11" height="11" fill="#27272a"/>
 
-  <!-- Code brackets -->
-  <text class="bracket-l" x="185" y="152" font-family="'Courier New', monospace" font-size="72" fill="#334155" font-weight="bold">&lt;</text>
-  <text class="bracket-r" x="778" y="152" font-family="'Courier New', monospace" font-size="72" fill="#334155" font-weight="bold">/&gt;</text>
+    <rect class="px d3" x="0"  y="39" width="11" height="11" fill="#27272a"/>
+    <rect class="px d5" x="13" y="39" width="11" height="11" fill="#f43f5e"/>
+    <rect class="px d7" x="26" y="39" width="11" height="11" fill="#27272a"/>
+    <rect class="px d2" x="39" y="39" width="11" height="11" fill="#22d3ee"/>
+    <rect class="px d4" x="52" y="39" width="11" height="11" fill="#27272a"/>
+    <rect class="px d6" x="65" y="39" width="11" height="11" fill="#f97316"/>
+    <rect class="px d8" x="78" y="39" width="11" height="11" fill="#3f3f46"/>
+    <rect class="px d1" x="91" y="39" width="11" height="11" fill="#eab308"/>
+    <rect class="px d3" x="104" y="39" width="11" height="11" fill="#27272a"/>
+    <rect class="px d5" x="117" y="39" width="11" height="11" fill="#a3e635"/>
 
-  <!-- Name with neon glow -->
-  <text x="500" y="130" text-anchor="middle" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="800" fill="url(#nameGrad)" filter="url(#glow)" letter-spacing="2">MUSTAPHA LAMHAMDI</text>
+    <rect class="px d7" x="0"  y="52" width="11" height="11" fill="#22d3ee"/>
+    <rect class="px d2" x="13" y="52" width="11" height="11" fill="#27272a"/>
+    <rect class="px d4" x="26" y="52" width="11" height="11" fill="#f97316"/>
+    <rect class="px d6" x="39" y="52" width="11" height="11" fill="#27272a"/>
+    <rect class="px d8" x="52" y="52" width="11" height="11" fill="#a3e635"/>
+    <rect class="px d1" x="65" y="52" width="11" height="11" fill="#27272a"/>
+    <rect class="px d3" x="78" y="52" width="11" height="11" fill="#eab308"/>
+    <rect class="px d5" x="91" y="52" width="11" height="11" fill="#27272a"/>
+    <rect class="px d7" x="104" y="52" width="11" height="11" fill="#f43f5e"/>
+    <rect class="px d2" x="117" y="52" width="11" height="11" fill="#3f3f46"/>
+  </g>
 
-  <!-- Animated underline -->
-  <line class="dash-line" x1="350" y1="150" x2="650" y2="150" stroke="url(#nameGrad)" stroke-width="2.5" stroke-linecap="round" filter="url(#softGlow)"/>
+  <!-- escaped pixels drifting toward the name -->
+  <g transform="translate(770,72)">
+    <rect class="runner" x="-6" y="30" width="8" height="8" fill="#f97316"/>
+    <rect class="runner2" x="-6" y="52" width="8" height="8" fill="#22d3ee"/>
+  </g>
 
-  <!-- Subtitle -->
-  <text class="subtitle" x="500" y="188" text-anchor="middle" font-family="'Courier New', monospace" font-size="19" fill="#94a3b8" letter-spacing="4">SOFTWARE ENGINEER · FULL-STACK DEVELOPER</text>
+  <text class="cap" x="770" y="160" font-family="'Courier New', monospace" font-size="12.5" fill="#52525b">every pixel placed on purpose</text>
 
-  <!-- Status bar -->
-  <g class="subtitle">
-    <circle class="status-dot" cx="404" cy="224" r="4" fill="#22c55e" filter="url(#softGlow)"/>
-    <text x="418" y="229" font-family="'Courier New', monospace" font-size="14" fill="#64748b">available for opportunities · Rabat, Morocco</text>
+  <!-- baseline -->
+  <line class="rule" x1="72" y1="216" x2="930" y2="216" stroke="#26262a" stroke-width="1.2"/>
+
+  <g class="cap">
+    <circle class="dot" cx="78" cy="248" r="4" fill="#a3e635"/>
+    <text x="94" y="253" font-family="'Segoe UI', Arial, sans-serif" font-size="14.5" fill="#6b6b70">available for opportunities &#183; Rabat, Morocco</text>
+    <text x="930" y="253" text-anchor="end" font-family="'Courier New', monospace" font-size="13" fill="#3f3f46">v2026.1</text>
   </g>
 </svg>
