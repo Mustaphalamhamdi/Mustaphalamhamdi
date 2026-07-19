@@ -30,7 +30,7 @@ The board below is a real, live chess game. Anyone reading this can make the nex
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mustaphalamhamdi/Mustaphalamhamdi/main/games/chess/board.svg?t=1784464508728" alt="Community chess board" width="420"/>
+<img src="https://raw.githubusercontent.com/Mustaphalamhamdi/Mustaphalamhamdi/main/games/chess/board.svg?t=1784465245947" alt="Community chess board" width="420"/>
 
 </div>
 
