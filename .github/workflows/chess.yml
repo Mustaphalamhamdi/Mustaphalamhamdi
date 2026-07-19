@@ -1,0 +1,67 @@
+name: Community Chess
+
+on:
+  issues:
+    types: [opened]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: chess-board
+  cancel-in-progress: false
+
+jobs:
+  play:
+    if: github.event_name == 'workflow_dispatch' || startsWith(github.event.issue.title, 'chess|')
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Install chess engine
+        run: npm install
+
+      - name: Play the move
+        env:
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_AUTHOR: ${{ github.event.issue.user.login }}
+        run: node scripts/chess.js
+
+      - name: Commit board update
+        run: |
+          git config user.name "chess-bot"
+          git config user.email "actions@github.com"
+          git add games/chess README.md
+          git diff --staged --quiet || git commit -m "chess: ${{ github.event.issue.title || 'render board' }}"
+          git pull --rebase origin main
+          git push
+
+      - name: Reply and close the issue
+        if: github.event_name == 'issues'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let body = 'Thanks for playing! ♟';
+            try { body = fs.readFileSync('/tmp/chess-comment.txt', 'utf8'); } catch (e) {}
+            await github.rest.issues.createComment({
+              ...context.repo,
+              issue_number: context.issue.number,
+              body,
+            });
+            await github.rest.issues.update({
+              ...context.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+            });
