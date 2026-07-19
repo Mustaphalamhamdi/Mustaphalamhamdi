@@ -31,10 +31,8 @@ I build web and desktop applications, from full-stack marketplaces to educationa
 
 ## 📫 Get in Touch
 
-- 💼 LinkedIn: [your-linkedin-url]
-- ✉️ Email: [your-email]
-- 🐦 X: [@mustaphalamham8](https://twitter.com/mustaphalamham8)
-
+- 💼 LinkedIn: https://www.linkedin.com/in/mustapha-lamhamdi-alaoui-1b905a1b7/
+- ✉️ Email: mustapha11lamhamdi11@gmail.com
 ---
 
 ⚡ *"First, solve the problem. Then, write the code."*
