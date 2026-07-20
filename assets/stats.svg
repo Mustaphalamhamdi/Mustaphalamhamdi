@@ -1,12 +1,14 @@
 <svg width="900" height="288" viewBox="0 0 900 288" xmlns="http://www.w3.org/2000/svg">
 <rect width="900" height="288" rx="10" fill="#101012"/>
 <rect x="1" y="1" width="898" height="286" rx="10" fill="none" stroke="#2e2e33" stroke-width="1"/>
-<text x="34" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">12</text>
-<text x="34" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">REPOSITORIES</text>
-<text x="202" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">2</text>
-<text x="202" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">STARS</text>
+<text x="34" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">512</text>
+<text x="34" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">CONTRIBUTIONS</text>
+<text x="202" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">12</text>
+<text x="202" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">REPOSITORIES</text>
 <text x="370" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">2</text>
-<text x="370" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">FORKS</text>
+<text x="370" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">STARS</text>
+<text x="538" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">2</text>
+<text x="538" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">FORKS</text>
 <line x1="34" y1="112" x2="866" y2="112" stroke="#2e2e33" stroke-width="1"/>
 <text x="34" y="143" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">JavaScript</text>
 <rect x="142" y="134" width="662" height="10" rx="5" fill="#27272a"/>
