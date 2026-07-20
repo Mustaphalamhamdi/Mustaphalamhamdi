@@ -17,7 +17,7 @@
         animation: journey 14s linear infinite;
       }
       @keyframes journey {
-        0%   { transform: translate(0px, 0px); opacity: 0; }
+        0%   { transform: translate(0px, 0px); opacity: 1; }
         4%   { opacity: 1; }
         45%  { transform: translate(-420px, 26px); opacity: 1; }
         50%  { transform: translate(-430px, 26px); opacity: 0; }
@@ -28,19 +28,21 @@
         animation-delay: -7s;
       }
       @keyframes journey2 {
-        0%   { transform: translate(0px, 0px); opacity: 0; }
+        0%   { transform: translate(0px, 0px); opacity: 1; }
         4%   { opacity: 1; }
         45%  { transform: translate(-380px, -18px); opacity: 1; }
         50%  { transform: translate(-390px, -18px); opacity: 0; }
         100% { transform: translate(-390px, -18px); opacity: 0; }
       }
-      .rule { stroke-dasharray: 860; stroke-dashoffset: 860; animation: drawrule 1.6s ease-out 0.4s forwards; }
-      @keyframes drawrule { to { stroke-dashoffset: 0; } }
+      /* drawn at rest; the dash sweep is enhancement only */
+      .rule { stroke-dasharray: 860; stroke-dashoffset: 0; }
       .dot { animation: breathe 2.6s ease-in-out infinite; }
       @keyframes breathe { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
       .intro { animation: rise 1s ease-out both; }
       .intro2 { animation: rise 1s ease-out 0.25s both; }
-      @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+      /* transform-only: text must never depend on animation to become visible,
+         since GitHub renders README SVGs as a static frame */
+      @keyframes rise { from { transform: translateY(10px); } to { transform: translateY(0); } }
       .cap { animation: rise 1s ease-out 0.9s both; }
     </style>
   </defs>
