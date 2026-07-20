@@ -4,7 +4,7 @@
 <rect x="26" y="26" width="44" height="44" fill="#232328"/>
 <text x="48" y="59" text-anchor="middle" font-size="32" fill="#f97316" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♜</text>
 <rect x="70" y="26" width="44" height="44" fill="#1a1a1e"/>
-<text x="92" y="59" text-anchor="middle" font-size="32" fill="#f97316" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♞</text>
+<rect x="71.5" y="27.5" width="41" height="41" fill="none" stroke="#eab308" stroke-width="2"/>
 <rect x="114" y="26" width="44" height="44" fill="#232328"/>
 <text x="136" y="59" text-anchor="middle" font-size="32" fill="#f97316" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♝</text>
 <rect x="158" y="26" width="44" height="44" fill="#1a1a1e"/>
@@ -36,6 +36,8 @@
 <rect x="26" y="114" width="44" height="44" fill="#232328"/>
 <rect x="70" y="114" width="44" height="44" fill="#1a1a1e"/>
 <rect x="114" y="114" width="44" height="44" fill="#232328"/>
+<rect x="115.5" y="115.5" width="41" height="41" fill="none" stroke="#eab308" stroke-width="2"/>
+<text x="136" y="147" text-anchor="middle" font-size="32" fill="#f97316" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♞</text>
 <rect x="158" y="114" width="44" height="44" fill="#1a1a1e"/>
 <rect x="202" y="114" width="44" height="44" fill="#232328"/>
 <rect x="246" y="114" width="44" height="44" fill="#1a1a1e"/>
@@ -58,7 +60,6 @@
 <rect x="290" y="202" width="44" height="44" fill="#232328"/>
 <rect x="334" y="202" width="44" height="44" fill="#1a1a1e"/>
 <rect x="26" y="246" width="44" height="44" fill="#1a1a1e"/>
-<rect x="27.5" y="247.5" width="41" height="41" fill="none" stroke="#eab308" stroke-width="2"/>
 <text x="48" y="279" text-anchor="middle" font-size="32" fill="#f4f4f2" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♟</text>
 <rect x="70" y="246" width="44" height="44" fill="#232328"/>
 <rect x="114" y="246" width="44" height="44" fill="#1a1a1e"/>
@@ -68,7 +69,6 @@
 <rect x="290" y="246" width="44" height="44" fill="#1a1a1e"/>
 <rect x="334" y="246" width="44" height="44" fill="#232328"/>
 <rect x="26" y="290" width="44" height="44" fill="#232328"/>
-<rect x="27.5" y="291.5" width="41" height="41" fill="none" stroke="#eab308" stroke-width="2"/>
 <rect x="70" y="290" width="44" height="44" fill="#1a1a1e"/>
 <text x="92" y="323" text-anchor="middle" font-size="32" fill="#f4f4f2" font-family="'Segoe UI Symbol','Noto Sans Symbols 2','Apple Symbols',sans-serif">♟</text>
 <rect x="114" y="290" width="44" height="44" fill="#232328"/>
