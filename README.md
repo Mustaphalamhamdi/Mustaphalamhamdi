@@ -14,11 +14,9 @@
 
 Software engineer in Rabat, Morocco. I build full-stack web applications and desktop tools — and I believe restraint is a feature. Every pixel on this page is placed on purpose.
 
-```
-stack     java · javafx · typescript · javascript · php · mysql
-tools     git · linux · vs code · intellij idea
-now       building, learning, shipping
-```
+<img src="./assets/stack.svg" width="100%" alt="Stack: Java, JavaFX, TypeScript, JavaScript, PHP, MySQL — Tools: Git, Linux, VS Code, IntelliJ IDEA"/>
+
+<sub>now — building, learning, shipping</sub>
 
 <br/>
 
@@ -99,8 +97,7 @@ One more small indulgence — my contribution graph, being eaten.
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=Mustaphalamhamdi&show_icons=true&hide_border=true&bg_color=101012&title_color=f97316&icon_color=eab308&text_color=6b6b70&ring_color=f97316&count_private=true" alt="GitHub stats"/>
-<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mustaphalamhamdi&layout=compact&hide_border=true&bg_color=101012&title_color=f97316&text_color=6b6b70" alt="Top languages"/>
+<img src="./assets/stats.svg" width="100%" alt="Repositories, stars, forks and language breakdown"/>
 
 </div>
 
