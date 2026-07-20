@@ -1,8 +1,8 @@
 {
-  "fen": "r1bqkbnr/pppppppp/2n5/8/P7/8/1PPPPPPP/RNBQKBNR b KQkq - 0 2",
+  "fen": "r1bqkbnr/pppp1ppp/2n1p3/8/P7/8/1PPPPPPP/RNBQKBNR w KQkq - 0 3",
   "lastMove": {
-    "from": "a3",
-    "to": "a4"
+    "from": "e7",
+    "to": "e6"
   },
   "history": [
     {
@@ -16,11 +16,15 @@
     {
       "san": "a4",
       "player": "OssamaAgourari"
+    },
+    {
+      "san": "e6",
+      "player": "OssamaAgourari"
     }
   ],
   "players": {
     "Mustaphalamhamdi": 2,
-    "OssamaAgourari": 1
+    "OssamaAgourari": 2
   },
   "gamesPlayed": 0
 }
