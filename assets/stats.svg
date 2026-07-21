@@ -3,7 +3,7 @@
 <rect x="1" y="1" width="898" height="286" rx="10" fill="none" stroke="#2e2e33" stroke-width="1"/>
 <text x="34" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">512</text>
 <text x="34" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">CONTRIBUTIONS</text>
-<text x="202" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">12</text>
+<text x="202" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">13</text>
 <text x="202" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">REPOSITORIES</text>
 <text x="370" y="72" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-1" fill="#f4f4f2">2</text>
 <text x="370" y="94" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="10.5" letter-spacing="2.4" fill="#6b6b70">STARS</text>
@@ -12,22 +12,22 @@
 <line x1="34" y1="112" x2="866" y2="112" stroke="#2e2e33" stroke-width="1"/>
 <text x="34" y="143" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">JavaScript</text>
 <rect x="142" y="134" width="662" height="10" rx="5" fill="#27272a"/>
-<rect x="142" y="134" width="175.5" height="10" rx="5" fill="#f97316"/>
-<text x="866" y="143" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">26.5%</text>
+<rect x="142" y="134" width="185.9" height="10" rx="5" fill="#f97316"/>
+<text x="866" y="143" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">28.1%</text>
 <text x="34" y="169" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">Java</text>
 <rect x="142" y="160" width="662" height="10" rx="5" fill="#27272a"/>
-<rect x="142" y="160" width="142.4" height="10" rx="5" fill="#eab308"/>
-<text x="866" y="169" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">21.5%</text>
+<rect x="142" y="160" width="126.6" height="10" rx="5" fill="#eab308"/>
+<text x="866" y="169" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">19.1%</text>
 <text x="34" y="195" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">Python</text>
 <rect x="142" y="186" width="662" height="10" rx="5" fill="#27272a"/>
-<rect x="142" y="186" width="82.2" height="10" rx="5" fill="#22d3ee"/>
-<text x="866" y="195" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">12.4%</text>
+<rect x="142" y="186" width="73.0" height="10" rx="5" fill="#22d3ee"/>
+<text x="866" y="195" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">11.0%</text>
 <text x="34" y="221" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">PHP</text>
 <rect x="142" y="212" width="662" height="10" rx="5" fill="#27272a"/>
-<rect x="142" y="212" width="74.7" height="10" rx="5" fill="#f43f5e"/>
-<text x="866" y="221" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">11.3%</text>
+<rect x="142" y="212" width="71.9" height="10" rx="5" fill="#f43f5e"/>
+<text x="866" y="221" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">10.9%</text>
 <text x="34" y="247" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif" font-size="12.5" fill="#6b6b70">TypeScript</text>
 <rect x="142" y="238" width="662" height="10" rx="5" fill="#27272a"/>
-<rect x="142" y="238" width="61.0" height="10" rx="5" fill="#a3e635"/>
-<text x="866" y="247" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">9.2%</text>
+<rect x="142" y="238" width="54.2" height="10" rx="5" fill="#a3e635"/>
+<text x="866" y="247" text-anchor="end" font-family="'Courier New',monospace" font-size="11.5" fill="#52525b">8.2%</text>
 </svg>
